@@ -15,11 +15,32 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cartoon-Springs-PPT-Backgrounds-1024x768.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Uvo-tf-aL1">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="note1.png" translatesAutoresizingMaskIntoConstraints="NO" id="kiz-Jn-K6P">
+                                <rect key="frame" x="219" y="398" width="74" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="fuY-RG-40F"/>
+                                    <constraint firstAttribute="width" constant="74" id="llZ-Sp-3TH"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="note2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pny-v0-5yF">
+                                <rect key="frame" x="123" y="398" width="74" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="Ts5-xY-zWX"/>
+                                    <constraint firstAttribute="width" constant="74" id="m0N-aG-Dj9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="note3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ycy-2p-0nc">
+                                <rect key="frame" x="27" y="398" width="74" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="H4V-Wt-Jq8"/>
+                                    <constraint firstAttribute="width" constant="74" id="fdv-q6-lC8"/>
+                                </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="board.png" translatesAutoresizingMaskIntoConstraints="NO" id="bOR-wo-8T8">
                                 <rect key="frame" x="5" y="105" width="310" height="265"/>
@@ -187,6 +208,12 @@
                                 <color key="shadowColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ly-2g-62Y">
+                                <rect key="frame" x="212" y="130" width="83" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -199,14 +226,22 @@
                             <constraint firstAttribute="trailingMargin" secondItem="bOR-wo-8T8" secondAttribute="trailing" constant="-11" id="HLi-II-JhK"/>
                             <constraint firstItem="2LB-I6-r2p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="32" id="IHg-kZ-kdX"/>
                             <constraint firstItem="Uvo-tf-aL1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JJ7-rZ-HUT"/>
+                            <constraint firstItem="bOR-wo-8T8" firstAttribute="top" secondItem="6Ly-2g-62Y" secondAttribute="bottom" constant="-51" id="O0X-X1-6O7"/>
                             <constraint firstAttribute="trailing" secondItem="bOR-wo-8T8" secondAttribute="trailing" constant="8" id="Otg-Sp-zJJ"/>
+                            <constraint firstItem="Pny-v0-5yF" firstAttribute="centerX" secondItem="ypX-Hv-Bjq" secondAttribute="centerX" id="R7M-Tz-ykr"/>
                             <constraint firstItem="zBL-7o-Fbu" firstAttribute="top" secondItem="ydE-W5-dYi" secondAttribute="bottom" constant="97" id="RQB-5O-2wY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PnS-F6-2gs" secondAttribute="trailing" constant="19" id="TZR-LC-RHM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bOR-wo-8T8" secondAttribute="trailing" constant="-11" id="U2U-Jd-fTg"/>
+                            <constraint firstItem="Pny-v0-5yF" firstAttribute="centerY" secondItem="ypX-Hv-Bjq" secondAttribute="centerY" id="V56-7C-6kW"/>
+                            <constraint firstItem="Ycy-2p-0nc" firstAttribute="centerX" secondItem="iea-nh-RtJ" secondAttribute="centerX" id="WtJ-o6-Dsl"/>
                             <constraint firstItem="bOR-wo-8T8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="9" id="Xxh-Yg-FVg"/>
                             <constraint firstItem="bOR-wo-8T8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-11" id="Z9V-6W-Cug"/>
+                            <constraint firstItem="kiz-Jn-K6P" firstAttribute="centerX" secondItem="vg8-KU-uQx" secondAttribute="centerX" id="ZOt-Nl-ehj"/>
                             <constraint firstItem="Uvo-tf-aL1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZSk-5c-0nc"/>
+                            <constraint firstItem="Ycy-2p-0nc" firstAttribute="centerY" secondItem="iea-nh-RtJ" secondAttribute="centerY" id="aJO-aD-qsF"/>
+                            <constraint firstItem="6Ly-2g-62Y" firstAttribute="leading" secondItem="bOR-wo-8T8" secondAttribute="trailing" constant="-103" id="ax3-Z7-1gO"/>
                             <constraint firstItem="bOR-wo-8T8" firstAttribute="top" secondItem="ydE-W5-dYi" secondAttribute="bottom" constant="8" id="bqN-x3-Dwo"/>
+                            <constraint firstItem="kiz-Jn-K6P" firstAttribute="centerY" secondItem="vg8-KU-uQx" secondAttribute="centerY" id="eJj-W9-dMU"/>
                             <constraint firstItem="bOR-wo-8T8" firstAttribute="top" secondItem="b2P-wY-Spk" secondAttribute="bottom" constant="1" id="eaf-ia-MrW"/>
                             <constraint firstAttribute="bottom" secondItem="Uvo-tf-aL1" secondAttribute="bottom" id="enq-Aw-mMF"/>
                             <constraint firstItem="PnS-F6-2gs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="19" id="hUs-jg-N0m"/>
@@ -227,7 +262,7 @@
                         </variation>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="btn_b1" destination="iea-nh-RtJ" id="J0v-GZ-HV4"/>
                         <outlet property="btn_b2" destination="ypX-Hv-Bjq" id="vAM-EY-ee2"/>
@@ -236,6 +271,7 @@
                         <outlet property="lbl_oper" destination="xRZ-jp-tbr" id="FnB-G3-jXe"/>
                         <outlet property="lbl_p1" destination="Z9D-Oi-4hd" id="Aaf-r9-Hm8"/>
                         <outlet property="lbl_p2" destination="9cS-dc-SrK" id="EiS-DU-GEQ"/>
+                        <outlet property="lbl_show" destination="6Ly-2g-62Y" id="NyN-Td-k1l"/>
                         <outlet property="lbl_time" destination="ydE-W5-dYi" id="ivz-Fb-Qf9"/>
                         <outlet property="lbl_true" destination="t61-cC-GXF" id="WvK-PR-slB"/>
                     </connections>
@@ -248,5 +284,8 @@
     <resources>
         <image name="Cartoon-Springs-PPT-Backgrounds-1024x768.jpg" width="1024" height="768"/>
         <image name="board.png" width="771" height="396"/>
+        <image name="note1.png" width="190" height="190"/>
+        <image name="note2.png" width="190" height="190"/>
+        <image name="note3.png" width="190" height="190"/>
     </resources>
 </document>

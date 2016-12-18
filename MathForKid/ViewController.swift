@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lbl_false: UILabel!
     @IBOutlet weak var lbl_oper: UILabel!
     @IBOutlet weak var lbl_time: UILabel!
+    @IBOutlet weak var lbl_show: UILabel!
     
     var trueKQ = 0
     var falseKQ = 0
@@ -28,6 +29,7 @@ class ViewController: UIViewController {
     var sumSub = 0
     var timer = NSTimer()
     var startTime = 0
+    var KQ = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +52,7 @@ class ViewController: UIViewController {
         }else{
             falseKQ += 1
         }
+        showMath()
         setRandom()
     }
 
@@ -59,6 +62,7 @@ class ViewController: UIViewController {
         }else{
             falseKQ += 1
         }
+        showMath()
         setRandom()
     }
     
@@ -68,7 +72,12 @@ class ViewController: UIViewController {
         }else{
             falseKQ += 1
         }
+        showMath()
         setRandom()
+    }
+    
+    func showMath(){
+        lbl_show.text = String("\(lbl_p1.text!) \(lbl_oper.text!) \(lbl_p2.text!) = \(KQ)")
     }
     
     func trueFalse(trueK: Int, falseK:Int){
@@ -104,7 +113,6 @@ class ViewController: UIViewController {
     
     func setResuilt(randomA: Int, randomB: Int){
         randomBut = Int(arc4random_uniform(3)) + 1
-        var KQ = 0
         //Random ket qua hien thi
         var randomKQ1 = 0
         var randomKQ2 = 0
